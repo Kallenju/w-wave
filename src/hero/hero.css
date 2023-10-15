@@ -29,6 +29,7 @@
 @media screen and (max-width: 40em) {
   .hero__container {
     padding: 4.10rem 0;
+    padding-top: 3.80rem;
   }
 }
 
