@@ -911,6 +911,7 @@ body {
 @media screen and (max-width: 40em) {
   .hero__container {
     padding: 4.10rem 0;
+    padding-top: 3.80rem;
   }
 }
 
@@ -3635,4 +3636,4 @@ body {
 
 
 
-/*# sourceMappingURL=main.51db6f836fcd2888a416.css.map*/
+/*# sourceMappingURL=main.1129dbed8f90fcaf3e6f.css.map*/
