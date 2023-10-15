@@ -563,7 +563,7 @@ body {
 @media screen and (max-width: 40em) {
   .primary-navigation__list {
     padding: 1.40rem 0;
-    padding-bottom: calc(1.70rem - 13px);
+    padding-bottom: calc(1.70rem - 10px);
   }
 }
 
@@ -3635,4 +3635,4 @@ body {
 
 
 
-/*# sourceMappingURL=main.e22a9cf5dee4589ec7ad.css.map*/
+/*# sourceMappingURL=main.51db6f836fcd2888a416.css.map*/
