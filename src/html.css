@@ -1,0 +1,12 @@
+html {
+  box-sizing: border-box;
+  font-family: Muller, sans-serif;
+  font-size: 0.625em;
+  line-height: 1.00;
+  color: var(--text-color-primary);
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+

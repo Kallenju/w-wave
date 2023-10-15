@@ -1,0 +1,24 @@
+@import url('./__text-block/about-us__text-block.css');
+@import url('./__author-list/about-us__author-list.css');
+@import url('./__ssatForm/about-us__ssatForm.css');
+
+.about-us {
+  margin: 0;
+  padding: 0;
+  background-color: var(--backgroung-color-contrast);
+}
+
+.about-us__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3.00rem;
+  padding: 9.40rem 0;
+}
+
+@media screen and (max-width: 40em) {
+  .about-us__container {
+    padding: 5.40rem 0;
+  }
+}

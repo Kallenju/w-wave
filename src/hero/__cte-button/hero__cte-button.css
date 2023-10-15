@@ -1,0 +1,61 @@
+.hero__cte-button {
+  margin: 0;
+  padding: 2.50rem 5.40rem;
+  border: none;
+  border-radius: 4.00rem;
+  outline: none;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Muller, sans-serif;
+  font-size: 2.00rem;
+  font-weight: 500;
+  line-height: 1.00;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--text-color-contrast);
+  background-color: var(--background-color-active-secondary);
+  cursor: pointer;
+  transition: color var(--transition-time-slow) linear, background-color var(--transition-time-slow) linear;
+}
+
+@media screen and (max-width: 40em) {
+  .hero__cte-button {
+    padding: 1.70rem 4.50rem;
+    font-size: 1.60rem;
+  }
+}
+
+@media (hover: none) {
+  .hero__cte-button {
+    cursor: none;
+  }
+}
+
+.hero__cte-button:focus-visible {
+  outline: 3px solid var( --foreground-color-active);
+  outline-offset: 0;
+  background-color: var(--background-color-hover);
+}
+
+.hero__cte-button:hover:not(:focus-visible) {
+  outline: none;
+  background-color: var(--background-color-hover);
+}
+
+.hero__cte-button:active:not(:focus-visible) {
+  outline: none;
+  background-color: var(--background-color-active);
+  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
+}
+
+@media (hover: none) {
+  .hero__cte-button:focus-visible {
+    outline: none;
+    background-color: var(--background-color-active-secondary);
+  }
+
+  .hero__cte-button:hover:not(:focus-visible) {
+    outline: none;
+    background-color: var(--background-color-active-secondary);
+  }
+}

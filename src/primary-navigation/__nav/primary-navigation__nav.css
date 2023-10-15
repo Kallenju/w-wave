@@ -1,0 +1,128 @@
+.primary-navigation__nav {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 82.5em) {
+  .primary-navigation__nav {
+    position: relative;
+    grid-column: 1 / 3;
+    grid-row: 2;
+    margin-top: 2.80rem;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .primary-navigation__nav {
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-top: 1.80rem;
+  }
+
+  .primary-navigation__nav::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.primary-navigation__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 82.5em) {
+  .primary-navigation__list {
+    padding: 2.10rem 0;
+  }
+}
+
+@media screen and (max-width: 56.5em) {
+  .primary-navigation__list {
+    padding: 2.00rem 0;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .primary-navigation__list {
+    padding: 1.40rem 0;
+    padding-bottom: calc(1.70rem - 13px);
+  }
+}
+
+.primary-navigation__li {
+  margin-right: 5.875rem;
+}
+
+.primary-navigation__li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 82.5em) {
+  .primary-navigation__li {
+    margin-right: 1.60rem;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .primary-navigation__li {
+    margin-right: 3.20rem;
+  }
+}
+
+.primary-navigation__nav-link {
+  font-family: Muller, sans-serif;
+  font-size: 2.00rem;
+  font-weight: 400;
+  color: var(--text-color-primary);
+  text-decoration: none;
+  transition: color var(--transition-time-slow) linear, background-color var(--transition-time-slow) linear;
+}
+
+@media screen and (max-width: 56.5em) {
+  .primary-navigation__nav-link {
+    font-size: 1.60rem;
+  }
+}
+
+@media (hover: none) {
+  .primary-navigation__nav-link {
+    cursor: none;
+  }
+}
+
+.primary-navigation__nav-link:focus-visible {
+  outline: 3px solid var(--foreground-color-hover);
+  outline-offset: 0;
+  color: var(--text-color-contrast);
+  background-color: var(--background-color-hover);
+}
+
+.primary-navigation__nav-link:hover:not(:focus-visible) {
+  outline: none;
+  color: var(--text-color-active-secondary);
+}
+
+.primary-navigation__nav-link:active:not(:focus-visible) {
+  outline: none;
+  color: var(--text-color-active);
+  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
+}
+
+@media (hover: none) {
+  .primary-navigation__nav-link:focus-visible {
+    outline: none;
+    color: var(--text-color-primary);
+    background: none;
+  }
+
+  .primary-navigation__nav-link:hover:not(:focus-visible) {
+    outline: none;
+    color: var(--text-color-primary);
+    background: none;
+  }
+}

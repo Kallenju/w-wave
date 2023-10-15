@@ -1,0 +1,60 @@
+@import url('./__item/advertisement__item.css');
+@import url('./__title/advertisement__title.css');
+@import url('./__paragraph/advertisement__paragraph.css');
+@import url('./__price/advertisement__price.css');
+@import url('./__product-link/advertisement__product-link.css');
+
+.advertisement {
+  margin: 0;
+  padding: 0;
+  background-color: var(--backgroung-color-contrast-secondary);
+}
+
+.advertisement__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3.00rem;
+  padding-top: 9.40rem;
+  padding-bottom: 13.30rem;
+}
+
+@media screen and (max-width: 82.5em) {
+  .advertisement__container {
+    align-items: center;
+    padding: 9.40rem 0;
+  }
+}
+
+@media screen and (max-width: 56.5em) {
+  .advertisement__container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5.00rem;
+    padding-top: 5.40rem;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .advertisement__container {
+    gap: 3.60rem;
+    padding-top: 5.00rem;
+    padding-bottom: 5.40rem;
+  }
+}
+
+.advertisement__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 0 1 44.50rem;
+}
+
+@media screen and (max-width: 82.5em) {
+  .advertisement__text-wrapper {
+    flex-basis: 39.60rem;
+  }
+}
+

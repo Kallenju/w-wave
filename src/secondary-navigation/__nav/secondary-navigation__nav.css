@@ -1,0 +1,113 @@
+.secondary-navigation__nav {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 56.5em) {
+  .secondary-navigation__nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .secondary-navigation__nav {
+    position: relative;
+    padding: 2.70rem 0;
+    padding-right: 5.00rem;
+  }
+
+  .secondary-navigation__nav::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -10vw;
+    width: 100vw;
+    height: 100%;
+    background-color: var(--backgroung-color-contrast);
+  }
+}
+
+.secondary-navigation__list {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr max-content;
+  row-gap: 2.00rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 44.50rem;
+}
+
+@media screen and (max-width: 56.5em) {
+  .secondary-navigation__list {
+    row-gap: 3.00rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .secondary-navigation__list {
+    grid-template-columns: 1fr max-content;
+    row-gap: 2.00rem;
+  }
+}
+
+.secondary-navigation__li {
+  margin: 0;
+  padding: 0;
+}
+
+.secondary-navigation__nav-link {
+  font-family: Muller, sans-serif;
+  font-size: 1.60rem;
+  font-weight: 400;
+  color: var(--text-color-contrast);
+  text-decoration: none;
+  transition: color var(--transition-time-slow) linear, background-color var(--transition-time-slow) linear;
+}
+
+@media screen and (max-width: 40em) {
+  .secondary-navigation__nav-link {
+    font-size: 1.20rem;
+  }
+}
+
+@media (hover: none) {
+  .secondary-navigation__nav-link {
+    cursor: none;
+  }
+}
+
+.secondary-navigation__nav-link:focus-visible {
+  outline: 3px solid var(--foreground-color-hover);
+  outline-offset: 0;
+  color: var(--text-color-contrast);
+  background-color: var(--background-color-hover);
+}
+
+.secondary-navigation__nav-link:hover:not(:focus-visible) {
+  outline: none;
+  color: var(--text-color-active-secondary);
+}
+
+.secondary-navigation__nav-link:active:not(:focus-visible) {
+  outline: none;
+  color: var(--text-color-active);
+  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
+}
+
+@media (hover: none) {
+  .secondary-navigation__nav-link:focus-visible {
+    outline: none;
+    color: var(--text-color-primary);
+    background: none;
+  }
+
+  .secondary-navigation__nav-link:hover:not(:focus-visible) {
+    outline: none;
+    color: var(--text-color-primary);
+    background: none;
+  }
+}

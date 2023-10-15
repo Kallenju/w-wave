@@ -1,0 +1,17 @@
+.podcasts__title {
+  margin: 0;
+  margin-bottom: 3.00rem;
+  padding: 0;
+  font-family: Muller, sans-serif;
+  font-size: 4.80rem;
+  font-weight: 400;
+  line-height: 1.00;
+  color: var(--text-color-primary);
+}
+
+@media screen and (max-width: 40em) {
+  .podcasts__title {
+    margin-bottom: 2.00rem;
+    font-size: 2.40rem;
+  }
+}

@@ -1,0 +1,126 @@
+.advertisement__product-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.80rem;
+  margin: 0;
+  padding: 2.30rem 1.15rem;
+  border: 0.20rem solid #F0D288;
+  border-radius: 10.00rem;
+  outline: none;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Muller, sans-serif;
+  font-size: 2.00rem;
+  font-weight: 500;
+  line-height: 1.00;
+  font-style: normal;
+  text-decoration: none;
+  color: #F0D288;
+  cursor: pointer;
+  background-color: var(--backgroung-color-contrast-secondary);
+  transition: border-color var(--transition-time-slow) linear, color var(--transition-time-slow) linear, background-color var(--transition-time-slow) linear;
+}
+
+@media screen and (max-width: 40em) {
+  .advertisement__product-link {
+    padding: 1.40rem 1.15rem;
+    font-size: 1.60rem;
+  }
+}
+
+.advertisement__product-link-ya-market-svg {
+  width: 2.00rem;
+  height: 2.00rem;
+}
+
+.advertisement__product-link-ya-market-svg-contour {
+  fill: #F0D288;
+  transition: fill var(--transition-time-slow) linear;
+}
+
+.advertisement__product-link-ya-market-svg-lightning {
+  fill: var(--text-color-primary);
+  transition: fill var(--transition-time-slow) linear;
+}
+
+@media (hover: none) {
+  .advertisement__product-link {
+    cursor: none;
+  }
+}
+
+.advertisement__product-link:focus-visible {
+  border-color: #F0D288;
+  color: var(--text-color-primary);
+  background-color: #BB973E;
+}
+
+.advertisement__product-link:focus-visible .advertisement__product-link-ya-market-svg-contour {
+  fill: #F0D288;
+}
+
+.advertisement__product-link:focus-visible .advertisement__product-link-ya-market-svg-lightning {
+  fill: var(--text-color-primary);
+}
+
+.advertisement__product-link:hover:not(:focus-visible) {
+  border-color: #F0D288;
+  color: var(--text-color-primary);
+  background-color: #F0D288;
+}
+
+.advertisement__product-link:hover:not(:focus-visible) .advertisement__product-link-ya-market-svg-contour {
+  fill: var(--text-color-primary);
+}
+
+.advertisement__product-link:hover:not(:focus-visible) .advertisement__product-link-ya-market-svg-lightning {
+  fill: #F0D288;
+}
+
+.advertisement__product-link:active:not(:focus-visible) {
+  border-color: #BB973E;
+  color: var(--text-color-primary);
+  background-color: #BB973E;
+  transition: border-color var(--transition-time-fast) ease-out, color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
+}
+
+.advertisement__product-link:active:not(:focus-visible) .advertisement__product-link-ya-market-svg-contour {
+  fill: var(--text-color-primary);
+  transition: fill var(--transition-time-fast) linear;
+}
+
+.advertisement__product-link:active:not(:focus-visible) .advertisement__product-link-ya-market-svg-lightning {
+  fill: #F0D288;
+  transition: fill var(--transition-time-fast) linear;
+}
+
+@media (hover: none) {
+  .advertisement__product-link:focus-visible {
+    border-color: #F0D288;
+    color: var(--text-color-primary);
+    background-color: var(--backgroung-color-contrast-secondary);
+  }
+
+  .advertisement__product-link:focus-visible .advertisement__product-link-ya-market-svg-contour {
+    fill: #F0D288;
+  }
+
+  .advertisement__product-link:focus-visible .advertisement__product-link-ya-market-svg-lightning {
+    fill: var(--text-color-primary);
+  }
+
+  .advertisement__product-link:hover:not(:focus-visible) {
+    border-color: #F0D288;
+    color: var(--text-color-primary);
+    background-color: var(--backgroung-color-contrast-secondary);
+  }
+
+  .advertisement__product-link:hover:not(:focus-visible) .advertisement__product-link-ya-market-svg-contour {
+    fill: #F0D288;
+  }
+
+  .advertisement__product-link:hover:not(:focus-visible) .advertisement__product-link-ya-market-svg-lightning {
+    fill: var(--text-color-primary);
+  }
+}

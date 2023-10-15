@@ -1,0 +1,18 @@
+.advertisement__item {
+  flex: 1 1 39.70rem;
+  max-width: 64.00rem;
+}
+
+@media screen and (max-width: 56.5em) {
+  .advertisement__item {
+    flex-basis: auto;
+    max-width: none;
+    min-width: auto;
+    max-height: 47.40rem;
+  }
+}
+
+.advertisement__item-img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,30 @@
+.advertisement__paragraph {
+  margin: 0;
+  padding: 0;
+  font-family: Muller, sans-serif;
+  font-size: 1.60rem;
+  font-weight: 400;
+  line-height: 1.80;
+  color: var(--text-color-contrast);
+}
+
+@media screen and (max-width: 40em) {
+  .advertisement__paragraph {
+    font-size: 1.40rem;
+    line-height: 1.60;
+  }
+}
+
+.advertisement__paragraph:nth-of-type(1) {
+  margin-bottom: 1.20rem;
+}
+
+.advertisement__paragraph:nth-of-type(2) {
+  margin-bottom: 3.00rem;
+}
+
+@media screen and (max-width: 40em) {
+  .advertisement__paragraph:nth-of-type(2) {
+    margin-bottom: 1.20rem;
+  }
+}

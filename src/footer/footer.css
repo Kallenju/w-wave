@@ -1,0 +1,8 @@
+@import url('../secondary-navigation/secondary-navigation.css');
+@import url('../footer-legal/footer-legal.css');
+
+.footer {
+  margin: 0;
+  padding: 0;
+  background-color: var(--backgroung-color-contrast-secondary);
+}

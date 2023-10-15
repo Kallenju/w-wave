@@ -1,0 +1,25 @@
+.container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 111.00rem;
+  width: 100%;
+  transition: padding var(--transition-time-slow) linear, width var(--transition-time-slow) linear;
+}
+
+@media screen and (max-width: 82.5em) {
+  .container {
+    max-width: 80.4688vw;
+  }
+}
+
+@media screen and (max-width: 56.5em) {
+  .container {
+    max-width: 70.3125vw;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .container {
+    max-width: 80.0000vw;
+  }
+}

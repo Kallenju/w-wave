@@ -1,0 +1,34 @@
+.secondary-navigation__logo {
+  position: relative;
+  display: inline-block;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  width: 16.00rem;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+}
+
+@media (hover: none) {
+  .secondary-navigation__logo {
+    cursor: none;
+  }
+}
+
+.secondary-navigation__logo:focus-visible {
+  outline: 1px solid var(--foreground-color-hover);
+  outline-offset: 3px;
+}
+
+@media (hover: none) {
+  .secondary-navigation__logo:focus-visible {
+    outline: none;
+  }
+}
+
+.secondary-navigation__logo-img {
+  width: 100%;
+  height: auto;
+}

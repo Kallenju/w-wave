@@ -1,0 +1,7 @@
+@import url('../primary-navigation/primary-navigation.css');
+
+.header {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,11 @@
+{
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+	"stylelint.enable": true,
+	"stylelint.validate": ["css"],
+	"[css]": {
+    	"editor.suggest.insertMode": "replace",
+    	"editor.defaultFormatter": "stylelint.vscode-stylelint"
+  	}
+}

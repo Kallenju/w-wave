@@ -1,0 +1,26 @@
+<form id="ssatForm" class="about-us__ssatForm" action="https://jsonplaceholder.typicode.com/posts" rel="noreferrer noopener" method="post" aria-label="Форма для отзывов">
+  <fieldset class="about-us__ssatForm-fieldset">
+    <legend class="about-us__ssatForm-fieldset-legend about-us__ssatForm-fieldset-legend_hidden">Choose your favorite monster</legend>
+    <div class="about-us__ssatForm-field-group-ssatText">
+      <span class="about-us__ssatForm-field-validation-error"></span>
+      <label class="about-us__ssatForm-label about-us__ssatForm-label_hidden" for="ssatText">Поле для ввода ваших мыслей</label>
+      <textarea id="ssatText" class="about-us__ssatForm-textarea" name="ssatText" placeholder="Что скажете?" required></textarea>
+    </div>
+    <div class="about-us__ssatForm-field-group-ssatUserName">
+      <span class="about-us__ssatForm-field-validation-error"></span>
+      <label class="about-us__ssatForm-label about-us__ssatForm-label_hidden" for="ssatUserName">Поле для ввода вашего имени</label>
+      <input id="ssatUserName" class="about-us__ssatForm-input" type="text" name="ssatUserName" placeholder="Имя" required>
+    </div>
+    <div class="about-us__ssatForm-field-group-ssatUserEmail">
+      <span class="about-us__ssatForm-field-validation-error"></span>
+      <label class="about-us__ssatForm-label about-us__ssatForm-label_hidden" for="ssatUserEmail">Поле для ввода вашей электронной почты</label>
+      <input id="ssatUserEmail" class="about-us__ssatForm-input" type="email" name="ssatUserEmail" placeholder="Email" required>
+    </div>
+  </fieldset>
+  <button class="about-us__ssatForm-submit-button" type="submit">Отправить</button>
+  <label class="about-us__ssatForm-consent-checkbox">
+    <input class="about-us__ssatForm-consent-checkbox-input" type="checkbox" id="ssatConsent" name="ssatConsent" required>
+    <span class="about-us__ssatForm-consent-checkbox-checkmark"></span>
+    <span class="about-us__ssatForm-consent-checkbox-label-text">Согласен на&nbsp;обработку персональных данных</span>
+  </label>
+</form>
