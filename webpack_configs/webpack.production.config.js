@@ -9,7 +9,7 @@ module.exports = {
 
 	output: {
 		filename: '[name].[fullhash:20].js',
-		publicPath: '/',
+		publicPath: `/${process.env.PUBLIC_PATH ?? ''}`,
     clean: true,
 	},
 
