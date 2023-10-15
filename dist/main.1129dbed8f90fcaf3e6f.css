@@ -563,7 +563,7 @@ body {
 @media screen and (max-width: 40em) {
   .primary-navigation__list {
     padding: 1.40rem 0;
-    padding-bottom: calc(1.70rem - 10px);
+    padding-bottom: calc(1.70rem - 8px);
   }
 }
 
