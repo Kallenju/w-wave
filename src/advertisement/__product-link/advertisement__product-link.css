@@ -78,23 +78,6 @@
   fill: #F0D288;
 }
 
-.advertisement__product-link:active:not(:focus-visible) {
-  border-color: #BB973E;
-  color: var(--text-color-primary);
-  background-color: #BB973E;
-  transition: border-color var(--transition-time-fast) ease-out, color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
-}
-
-.advertisement__product-link:active:not(:focus-visible) .advertisement__product-link-ya-market-svg-contour {
-  fill: var(--text-color-primary);
-  transition: fill var(--transition-time-fast) linear;
-}
-
-.advertisement__product-link:active:not(:focus-visible) .advertisement__product-link-ya-market-svg-lightning {
-  fill: #F0D288;
-  transition: fill var(--transition-time-fast) linear;
-}
-
 @media (hover: none) {
   .advertisement__product-link:focus-visible {
     border-color: #F0D288;
@@ -123,4 +106,21 @@
   .advertisement__product-link:hover:not(:focus-visible) .advertisement__product-link-ya-market-svg-lightning {
     fill: var(--text-color-primary);
   }
+}
+
+.advertisement__product-link:active:not(:focus-visible) {
+  border-color: #BB973E;
+  color: var(--text-color-primary);
+  background-color: #BB973E;
+  transition: border-color var(--transition-time-fast) ease-out, color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
+}
+
+.advertisement__product-link:active:not(:focus-visible) .advertisement__product-link-ya-market-svg-contour {
+  fill: var(--text-color-primary);
+  transition: fill var(--transition-time-fast) linear;
+}
+
+.advertisement__product-link:active:not(:focus-visible) .advertisement__product-link-ya-market-svg-lightning {
+  fill: #F0D288;
+  transition: fill var(--transition-time-fast) linear;
 }

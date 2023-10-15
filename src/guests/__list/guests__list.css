@@ -157,13 +157,6 @@
   background-color: var(--background-color-hover);
 }
 
-.guests__item-broadcast-link:active:not(:focus-visible) {
-  border-color: var(--text-color-active);
-  color: var(--text-color-contrast);
-  background-color: var(--background-color-active);
-  transition: border-color var(--transition-time-fast) linear, color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .guests__item-broadcast-link:focus-visible {
     border-color: var(--foreground-color-hover);
@@ -176,4 +169,11 @@
     color: var(--text-color-hover);
     background-color: var(--backgroung-color-contrast);
   }
+}
+
+.guests__item-broadcast-link:active:not(:focus-visible) {
+  border-color: var(--text-color-active);
+  color: var(--text-color-contrast);
+  background-color: var(--background-color-active);
+  transition: border-color var(--transition-time-fast) linear, color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
 }

@@ -64,11 +64,6 @@
   fill: #6D31EE;
 }
 
-.secondary-navigation__socials-link:active:not(:focus-visible) .secondary-navigation__socials-link-svg-path {
-  fill: #4F28A5;
-  transition: fill var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .secondary-navigation__socials-link:focus-visible .secondary-navigation__socials-link-svg-path {
     fill: #D2D5DD;
@@ -77,4 +72,9 @@
   .secondary-navigation__socials-link:hover:not(:focus-visible) .secondary-navigation__socials-link-svg-path {
     fill: #D2D5DD;
   }
+}
+
+.secondary-navigation__socials-link:active:not(:focus-visible) .secondary-navigation__socials-link-svg-path {
+  fill: #4F28A5;
+  transition: fill var(--transition-time-fast) ease-out;
 }

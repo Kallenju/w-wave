@@ -137,6 +137,13 @@
   transition: border-color var(--transition-time-slow) linear, color var(--transition-time-slow) linear, caret-color var(--transition-time-slow) linear, background-color var(--transition-time-slow) linear;
 }
 
+@media screen and (max-width: 40em) {
+  .about-us__ssatForm-textarea {
+    padding: 1.50rem 2.30rem;
+    font-size: 1.60rem;
+  }
+}
+
 .about-us__ssatForm-textarea:focus-visible {
   border-color: var(--foreground-color-hover);
   color: var(--text-color-contrast-secondary);
@@ -193,6 +200,12 @@
   transition: color var(--transition-time-slow) linear;
 }
 
+@media screen and (max-width: 40em) {
+  .about-us__ssatForm-textarea::placeholder {
+    font-size: 1.60rem;
+  }
+}
+
 .about-us__ssatForm-textarea:active::placeholder {
   color: var(--text-color-contrast);
   transition: color var(--transition-time-fast) ease-out;
@@ -200,7 +213,24 @@
 
 .about-us__ssatForm-textarea_invalid,
 .about-us__ssatForm-textarea_invalid:focus-visible,
-.about-us__ssatForm-textarea_invalid:hover:not(:focus-visible),
+.about-us__ssatForm-textarea_invalid:hover:not(:focus-visible) {
+  border-color: var(--foreground-color-warning);
+  color: var(--text-color-contrast);
+  caret-color: var(--text-color-contrast);
+  background-color: var(--backgroung-color-contrast);
+}
+
+
+@media (hover: none) {
+  .about-us__ssatForm-textarea_invalid:focus-visible,
+  .about-us__ssatForm-textarea_invalid:hover:not(:focus-visible) {
+    border-color: var(--text-color-contrast);
+    color: var(--text-color-contrast-secondary);
+    caret-color: var(--text-color-contrast-secondary);
+    background-color: var(--backgroung-color-contrast);
+  }
+}
+
 .about-us__ssatForm-textarea_invalid:active:not(:focus-visible),
 .about-us__ssatForm-textarea_invalid:not(:placeholder-shown:focus-visible) {
   border-color: var(--foreground-color-warning);
@@ -214,16 +244,6 @@
   color: var(--text-color-contrast-secondary);
   caret-color: var(--text-color-contrast-secondary);
   background-color: var(--backgroung-color-contrast);
-}
-
-@media (hover: none) {
-  .about-us__ssatForm-textarea_invalid:focus-visible,
-  .about-us__ssatForm-textarea_invalid:hover:not(:focus-visible) {
-    border-color: var(--text-color-contrast);
-    color: var(--text-color-contrast-secondary);
-    caret-color: var(--text-color-contrast-secondary);
-    background-color: var(--backgroung-color-contrast);
-  }
 }
 
 .about-us__ssatForm-input {
@@ -247,6 +267,7 @@
 @media screen and (max-width: 40em) {
   .about-us__ssatForm-input {
     padding: 1.50rem 2.30rem;
+    font-size: 1.60rem;
   }
 }
 
@@ -306,6 +327,12 @@
   transition: color var(--transition-time-slow) linear;
 }
 
+@media screen and (max-width: 40em) {
+  .about-us__ssatForm-input::placeholder {
+    font-size: 1.60rem;
+  }
+}
+
 .about-us__ssatForm-input:active::placeholder {
   color: var(--text-color-contrast);
   transition: color var(--transition-time-fast) ease-out;
@@ -313,9 +340,7 @@
 
 .about-us__ssatForm-input_invalid,
 .about-us__ssatForm-input_invalid:focus-visible,
-.about-us__ssatForm-input_invalid:hover:not(:focus-visible),
-.about-us__ssatForm-input_invalid:active:not(:focus-visible),
-.about-us__ssatForm-input_invalid:not(:placeholder-shown:focus-visible) {
+.about-us__ssatForm-input_invalid:hover:not(:focus-visible) {
   border-color: var(--foreground-color-warning);
   color: var(--text-color-contrast);
   caret-color: var(--text-color-contrast);
@@ -330,6 +355,14 @@
     caret-color: var(--text-color-contrast-secondary);
     background-color: var(--backgroung-color-contrast);
   }
+}
+
+.about-us__ssatForm-input_invalid:active:not(:focus-visible),
+.about-us__ssatForm-input_invalid:not(:placeholder-shown:focus-visible) {
+  border-color: var(--foreground-color-warning);
+  color: var(--text-color-contrast);
+  caret-color: var(--text-color-contrast);
+  background-color: var(--backgroung-color-contrast);
 }
 
 .about-us__ssatForm-submit-button {
@@ -378,12 +411,6 @@
   background-color: var(--background-color-hover);
 }
 
-.about-us__ssatForm-submit-button:active:not(:focus-visible) {
-  outline: none;
-  background-color: var(--background-color-active);
-  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .about-us__ssatForm-submit-button:focus-visible {
     outline: none;
@@ -394,6 +421,12 @@
     outline: none;
     background-color: var(--background-color-active-secondary);
   }
+}
+
+.about-us__ssatForm-submit-button:active:not(:focus-visible) {
+  outline: none;
+  background-color: var(--background-color-active);
+  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
 }
 
 .about-us__ssatForm-consent-checkbox {
@@ -457,9 +490,14 @@
   outline: 1px solid var(--foreground-color-hover);
 }
 
+@media (hover: none) {
+  .about-us__ssatForm-consent-checkbox-input:focus-visible + .about-us__ssatForm-consent-checkbox-checkmark {
+    outline: 1px solid var(--foreground-color-primary);
+  }
+}
+
 .about-us__ssatForm-consent-checkbox-input_invalid:focus-visible + .about-us__ssatForm-consent-checkbox-checkmark,
-.about-us__ssatForm-consent-checkbox-input_invalid:hover:not(:focus-visible) + .about-us__ssatForm-consent-checkbox-checkmark,
-.about-us__ssatForm-consent-checkbox-input_invalid:active:not(:focus-visible) + .about-us__ssatForm-consent-checkbox-checkmark {
+.about-us__ssatForm-consent-checkbox-input_invalid:hover:not(:focus-visible) + .about-us__ssatForm-consent-checkbox-checkmark {
   outline: 1px solid var(--foreground-color-warning);
 }
 
@@ -470,10 +508,8 @@
   }
 }
 
-@media (hover: none) {
-  .about-us__ssatForm-consent-checkbox-input:focus-visible + .about-us__ssatForm-consent-checkbox-checkmark {
-    outline: 1px solid var(--foreground-color-primary);
-  }
+.about-us__ssatForm-consent-checkbox-input_invalid:active:not(:focus-visible) + .about-us__ssatForm-consent-checkbox-checkmark {
+  outline: 1px solid var(--foreground-color-warning);
 }
 
 .about-us__ssatForm-consent-checkbox-checkmark::after {

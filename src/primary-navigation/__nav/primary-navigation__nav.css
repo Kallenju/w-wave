@@ -107,12 +107,6 @@
   color: var(--text-color-active-secondary);
 }
 
-.primary-navigation__nav-link:active:not(:focus-visible) {
-  outline: none;
-  color: var(--text-color-active);
-  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .primary-navigation__nav-link:focus-visible {
     outline: none;
@@ -125,4 +119,10 @@
     color: var(--text-color-primary);
     background: none;
   }
+}
+
+.primary-navigation__nav-link:active:not(:focus-visible) {
+  outline: none;
+  color: var(--text-color-active);
+  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
 }

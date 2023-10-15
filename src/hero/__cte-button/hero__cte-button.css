@@ -42,12 +42,6 @@
   background-color: var(--background-color-hover);
 }
 
-.hero__cte-button:active:not(:focus-visible) {
-  outline: none;
-  background-color: var(--background-color-active);
-  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .hero__cte-button:focus-visible {
     outline: none;
@@ -58,4 +52,10 @@
     outline: none;
     background-color: var(--background-color-active-secondary);
   }
+}
+
+.hero__cte-button:active:not(:focus-visible) {
+  outline: none;
+  background-color: var(--background-color-active);
+  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
 }

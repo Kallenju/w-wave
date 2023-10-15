@@ -188,22 +188,6 @@
   fill: #6D31EE;
 }
 
-.broadcasts__item-link:active:not(:focus-visible) {
-  outline: none;
-  color: var(--text-color-active);
-  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
-}
-
-.broadcasts__item-link:active:not(:focus-visible) .broadcasts__item-link-arrow-svg {
-  width: 2.60rem;
-  transition: width var(--transition-time-fast) ease-out;
-}
-
-.broadcasts__item-link:active:not(:focus-visible) .broadcasts__item-link-arrow-svg-path {
-  fill: #4F28A5;
-  transition: fill var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .broadcasts__item-link:focus-visible {
     outline: none;
@@ -230,4 +214,20 @@
   .broadcasts__item-link:hover:not(:focus-visible) .broadcasts__item-link-arrow-svg-path {
     fill: var(--text-color-primary);
   }
+}
+
+.broadcasts__item-link:active:not(:focus-visible) {
+  outline: none;
+  color: var(--text-color-active);
+  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
+}
+
+.broadcasts__item-link:active:not(:focus-visible) .broadcasts__item-link-arrow-svg {
+  width: 2.60rem;
+  transition: width var(--transition-time-fast) ease-out;
+}
+
+.broadcasts__item-link:active:not(:focus-visible) .broadcasts__item-link-arrow-svg-path {
+  fill: #4F28A5;
+  transition: fill var(--transition-time-fast) ease-out;
 }

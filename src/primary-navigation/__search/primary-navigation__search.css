@@ -41,11 +41,6 @@
   fill: #AA9DFA;
 }
 
-.primary-navigation__search-button:active:not(:focus-visible) .primary-navigation__search-button-svg-path {
-  fill: #4F28A5;
-  transition: fill var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .primary-navigation__search-button:focus-visible .primary-navigation__search-button-svg-path {
     fill: #6D31EE;
@@ -54,4 +49,9 @@
   .primary-navigation__search-button:hover:not(:focus-visible) .primary-navigation__search-button-svg-path {
     fill: #6D31EE;
   }
+}
+
+.primary-navigation__search-button:active:not(:focus-visible) .primary-navigation__search-button-svg-path {
+  fill: #4F28A5;
+  transition: fill var(--transition-time-fast) ease-out;
 }
