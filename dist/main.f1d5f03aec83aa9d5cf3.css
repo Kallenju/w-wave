@@ -621,12 +621,6 @@ body {
   color: var(--text-color-active-secondary);
 }
 
-.primary-navigation__nav-link:active:not(:focus-visible) {
-  outline: none;
-  color: var(--text-color-active);
-  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .primary-navigation__nav-link:focus-visible {
     outline: none;
@@ -639,6 +633,12 @@ body {
     color: var(--text-color-primary);
     background: none;
   }
+}
+
+.primary-navigation__nav-link:active:not(:focus-visible) {
+  outline: none;
+  color: var(--text-color-active);
+  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
 }
 
 .primary-navigation__search {
@@ -687,11 +687,6 @@ body {
   fill: #AA9DFA;
 }
 
-.primary-navigation__search-button:active:not(:focus-visible) .primary-navigation__search-button-svg-path {
-  fill: #4F28A5;
-  transition: fill var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .primary-navigation__search-button:focus-visible .primary-navigation__search-button-svg-path {
     fill: #6D31EE;
@@ -700,6 +695,11 @@ body {
   .primary-navigation__search-button:hover:not(:focus-visible) .primary-navigation__search-button-svg-path {
     fill: #6D31EE;
   }
+}
+
+.primary-navigation__search-button:active:not(:focus-visible) .primary-navigation__search-button-svg-path {
+  fill: #4F28A5;
+  transition: fill var(--transition-time-fast) ease-out;
 }
 
 .primary-navigation {
@@ -866,12 +866,6 @@ body {
   background-color: var(--background-color-hover);
 }
 
-.hero__cte-button:active:not(:focus-visible) {
-  outline: none;
-  background-color: var(--background-color-active);
-  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .hero__cte-button:focus-visible {
     outline: none;
@@ -882,6 +876,12 @@ body {
     outline: none;
     background-color: var(--background-color-active-secondary);
   }
+}
+
+.hero__cte-button:active:not(:focus-visible) {
+  outline: none;
+  background-color: var(--background-color-active);
+  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
 }
 
 .hero {
@@ -1186,7 +1186,6 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100%;
     border-top: 1px solid #E6E8EC;
   }
 }
@@ -1194,6 +1193,10 @@ body {
 @media screen and (max-width: 40em) {
   .broadcast__archive {
     padding-bottom: 0;
+  }
+
+  .broadcast__archive::before {
+    left: -10vw;
   }
 }
 
@@ -1282,13 +1285,6 @@ body {
   background-color: var(--backgroung-color-contrast-secondary);
 }
 
-.broadcast__archive-link:active:not(:focus-visible) {
-  border-color: var(--text-color-primary);
-  color: var(--text-color-contrast);
-  background-color: var(--backgroung-color-contrast);
-  transition: border-color var(--transition-time-fast) ease-out, color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .broadcast__archive-link:focus-visible {
     border-color: var(--text-color-primary);
@@ -1301,6 +1297,13 @@ body {
     color: var(--text-color-primary);
     background-color: var(--backgroung-color-primary);
   }
+}
+
+.broadcast__archive-link:active:not(:focus-visible) {
+  border-color: var(--text-color-primary);
+  color: var(--text-color-contrast);
+  background-color: var(--backgroung-color-contrast);
+  transition: border-color var(--transition-time-fast) ease-out, color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
 }
 
 .broadcast__archive-desc {
@@ -1517,22 +1520,6 @@ body {
   fill: #6D31EE;
 }
 
-.broadcasts__item-link:active:not(:focus-visible) {
-  outline: none;
-  color: var(--text-color-active);
-  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
-}
-
-.broadcasts__item-link:active:not(:focus-visible) .broadcasts__item-link-arrow-svg {
-  width: 2.60rem;
-  transition: width var(--transition-time-fast) ease-out;
-}
-
-.broadcasts__item-link:active:not(:focus-visible) .broadcasts__item-link-arrow-svg-path {
-  fill: #4F28A5;
-  transition: fill var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .broadcasts__item-link:focus-visible {
     outline: none;
@@ -1559,6 +1546,22 @@ body {
   .broadcasts__item-link:hover:not(:focus-visible) .broadcasts__item-link-arrow-svg-path {
     fill: var(--text-color-primary);
   }
+}
+
+.broadcasts__item-link:active:not(:focus-visible) {
+  outline: none;
+  color: var(--text-color-active);
+  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
+}
+
+.broadcasts__item-link:active:not(:focus-visible) .broadcasts__item-link-arrow-svg {
+  width: 2.60rem;
+  transition: width var(--transition-time-fast) ease-out;
+}
+
+.broadcasts__item-link:active:not(:focus-visible) .broadcasts__item-link-arrow-svg-path {
+  fill: #4F28A5;
+  transition: fill var(--transition-time-fast) ease-out;
 }
 
 .broadcasts {
@@ -1814,13 +1817,6 @@ body {
   background-color: var(--background-color-hover);
 }
 
-.guests__item-broadcast-link:active:not(:focus-visible) {
-  border-color: var(--text-color-active);
-  color: var(--text-color-contrast);
-  background-color: var(--background-color-active);
-  transition: border-color var(--transition-time-fast) linear, color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .guests__item-broadcast-link:focus-visible {
     border-color: var(--foreground-color-hover);
@@ -1833,6 +1829,13 @@ body {
     color: var(--text-color-hover);
     background-color: var(--backgroung-color-contrast);
   }
+}
+
+.guests__item-broadcast-link:active:not(:focus-visible) {
+  border-color: var(--text-color-active);
+  color: var(--text-color-contrast);
+  background-color: var(--background-color-active);
+  transition: border-color var(--transition-time-fast) linear, color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
 }
 
 .guests {
@@ -2373,23 +2376,6 @@ body {
   fill: #F0D288;
 }
 
-.advertisement__product-link:active:not(:focus-visible) {
-  border-color: #BB973E;
-  color: var(--text-color-primary);
-  background-color: #BB973E;
-  transition: border-color var(--transition-time-fast) ease-out, color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
-}
-
-.advertisement__product-link:active:not(:focus-visible) .advertisement__product-link-ya-market-svg-contour {
-  fill: var(--text-color-primary);
-  transition: fill var(--transition-time-fast) linear;
-}
-
-.advertisement__product-link:active:not(:focus-visible) .advertisement__product-link-ya-market-svg-lightning {
-  fill: #F0D288;
-  transition: fill var(--transition-time-fast) linear;
-}
-
 @media (hover: none) {
   .advertisement__product-link:focus-visible {
     border-color: #F0D288;
@@ -2418,6 +2404,23 @@ body {
   .advertisement__product-link:hover:not(:focus-visible) .advertisement__product-link-ya-market-svg-lightning {
     fill: var(--text-color-primary);
   }
+}
+
+.advertisement__product-link:active:not(:focus-visible) {
+  border-color: #BB973E;
+  color: var(--text-color-primary);
+  background-color: #BB973E;
+  transition: border-color var(--transition-time-fast) ease-out, color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
+}
+
+.advertisement__product-link:active:not(:focus-visible) .advertisement__product-link-ya-market-svg-contour {
+  fill: var(--text-color-primary);
+  transition: fill var(--transition-time-fast) linear;
+}
+
+.advertisement__product-link:active:not(:focus-visible) .advertisement__product-link-ya-market-svg-lightning {
+  fill: #F0D288;
+  transition: fill var(--transition-time-fast) linear;
 }
 
 .advertisement {
@@ -2802,6 +2805,13 @@ body {
   transition: border-color var(--transition-time-slow) linear, color var(--transition-time-slow) linear, caret-color var(--transition-time-slow) linear, background-color var(--transition-time-slow) linear;
 }
 
+@media screen and (max-width: 40em) {
+  .about-us__ssatForm-textarea {
+    padding: 1.50rem 2.30rem;
+    font-size: 1.60rem;
+  }
+}
+
 .about-us__ssatForm-textarea:focus-visible {
   border-color: var(--foreground-color-hover);
   color: var(--text-color-contrast-secondary);
@@ -2878,6 +2888,15 @@ body {
   transition: color var(--transition-time-slow) linear;
 }
 
+@media screen and (max-width: 40em) {
+  .about-us__ssatForm-textarea::-moz-placeholder {
+    font-size: 1.60rem;
+  }
+  .about-us__ssatForm-textarea::placeholder {
+    font-size: 1.60rem;
+  }
+}
+
 .about-us__ssatForm-textarea:active::-moz-placeholder {
   color: var(--text-color-contrast);
   -moz-transition: color var(--transition-time-fast) ease-out;
@@ -2889,6 +2908,26 @@ body {
   transition: color var(--transition-time-fast) ease-out;
 }
 
+.about-us__ssatForm-textarea_invalid,
+.about-us__ssatForm-textarea_invalid:focus-visible,
+.about-us__ssatForm-textarea_invalid:hover:not(:focus-visible) {
+  border-color: var(--foreground-color-warning);
+  color: var(--text-color-contrast);
+  caret-color: var(--text-color-contrast);
+  background-color: var(--backgroung-color-contrast);
+}
+
+
+@media (hover: none) {
+  .about-us__ssatForm-textarea_invalid:focus-visible,
+  .about-us__ssatForm-textarea_invalid:hover:not(:focus-visible) {
+    border-color: var(--text-color-contrast);
+    color: var(--text-color-contrast-secondary);
+    caret-color: var(--text-color-contrast-secondary);
+    background-color: var(--backgroung-color-contrast);
+  }
+}
+
 .about-us__ssatForm-textarea_invalid:not(:-moz-placeholder-shown:focus-visible) {
   border-color: var(--foreground-color-warning);
   color: var(--text-color-contrast);
@@ -2896,9 +2935,6 @@ body {
   background-color: var(--backgroung-color-contrast);
 }
 
-.about-us__ssatForm-textarea_invalid,
-.about-us__ssatForm-textarea_invalid:focus-visible,
-.about-us__ssatForm-textarea_invalid:hover:not(:focus-visible),
 .about-us__ssatForm-textarea_invalid:active:not(:focus-visible),
 .about-us__ssatForm-textarea_invalid:not(:placeholder-shown:focus-visible) {
   border-color: var(--foreground-color-warning);
@@ -2919,16 +2955,6 @@ body {
   color: var(--text-color-contrast-secondary);
   caret-color: var(--text-color-contrast-secondary);
   background-color: var(--backgroung-color-contrast);
-}
-
-@media (hover: none) {
-  .about-us__ssatForm-textarea_invalid:focus-visible,
-  .about-us__ssatForm-textarea_invalid:hover:not(:focus-visible) {
-    border-color: var(--text-color-contrast);
-    color: var(--text-color-contrast-secondary);
-    caret-color: var(--text-color-contrast-secondary);
-    background-color: var(--backgroung-color-contrast);
-  }
 }
 
 .about-us__ssatForm-input {
@@ -2952,6 +2978,7 @@ body {
 @media screen and (max-width: 40em) {
   .about-us__ssatForm-input {
     padding: 1.50rem 2.30rem;
+    font-size: 1.60rem;
   }
 }
 
@@ -3031,6 +3058,15 @@ body {
   transition: color var(--transition-time-slow) linear;
 }
 
+@media screen and (max-width: 40em) {
+  .about-us__ssatForm-input::-moz-placeholder {
+    font-size: 1.60rem;
+  }
+  .about-us__ssatForm-input::placeholder {
+    font-size: 1.60rem;
+  }
+}
+
 .about-us__ssatForm-input:active::-moz-placeholder {
   color: var(--text-color-contrast);
   -moz-transition: color var(--transition-time-fast) ease-out;
@@ -3042,18 +3078,9 @@ body {
   transition: color var(--transition-time-fast) ease-out;
 }
 
-.about-us__ssatForm-input_invalid:not(:-moz-placeholder-shown:focus-visible) {
-  border-color: var(--foreground-color-warning);
-  color: var(--text-color-contrast);
-  caret-color: var(--text-color-contrast);
-  background-color: var(--backgroung-color-contrast);
-}
-
 .about-us__ssatForm-input_invalid,
 .about-us__ssatForm-input_invalid:focus-visible,
-.about-us__ssatForm-input_invalid:hover:not(:focus-visible),
-.about-us__ssatForm-input_invalid:active:not(:focus-visible),
-.about-us__ssatForm-input_invalid:not(:placeholder-shown:focus-visible) {
+.about-us__ssatForm-input_invalid:hover:not(:focus-visible) {
   border-color: var(--foreground-color-warning);
   color: var(--text-color-contrast);
   caret-color: var(--text-color-contrast);
@@ -3068,6 +3095,21 @@ body {
     caret-color: var(--text-color-contrast-secondary);
     background-color: var(--backgroung-color-contrast);
   }
+}
+
+.about-us__ssatForm-input_invalid:not(:-moz-placeholder-shown:focus-visible) {
+  border-color: var(--foreground-color-warning);
+  color: var(--text-color-contrast);
+  caret-color: var(--text-color-contrast);
+  background-color: var(--backgroung-color-contrast);
+}
+
+.about-us__ssatForm-input_invalid:active:not(:focus-visible),
+.about-us__ssatForm-input_invalid:not(:placeholder-shown:focus-visible) {
+  border-color: var(--foreground-color-warning);
+  color: var(--text-color-contrast);
+  caret-color: var(--text-color-contrast);
+  background-color: var(--backgroung-color-contrast);
 }
 
 .about-us__ssatForm-submit-button {
@@ -3117,12 +3159,6 @@ body {
   background-color: var(--background-color-hover);
 }
 
-.about-us__ssatForm-submit-button:active:not(:focus-visible) {
-  outline: none;
-  background-color: var(--background-color-active);
-  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .about-us__ssatForm-submit-button:focus-visible {
     outline: none;
@@ -3133,6 +3169,12 @@ body {
     outline: none;
     background-color: var(--background-color-active-secondary);
   }
+}
+
+.about-us__ssatForm-submit-button:active:not(:focus-visible) {
+  outline: none;
+  background-color: var(--background-color-active);
+  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
 }
 
 .about-us__ssatForm-consent-checkbox {
@@ -3199,9 +3241,14 @@ body {
   outline: 1px solid var(--foreground-color-hover);
 }
 
+@media (hover: none) {
+  .about-us__ssatForm-consent-checkbox-input:focus-visible + .about-us__ssatForm-consent-checkbox-checkmark {
+    outline: 1px solid var(--foreground-color-primary);
+  }
+}
+
 .about-us__ssatForm-consent-checkbox-input_invalid:focus-visible + .about-us__ssatForm-consent-checkbox-checkmark,
-.about-us__ssatForm-consent-checkbox-input_invalid:hover:not(:focus-visible) + .about-us__ssatForm-consent-checkbox-checkmark,
-.about-us__ssatForm-consent-checkbox-input_invalid:active:not(:focus-visible) + .about-us__ssatForm-consent-checkbox-checkmark {
+.about-us__ssatForm-consent-checkbox-input_invalid:hover:not(:focus-visible) + .about-us__ssatForm-consent-checkbox-checkmark {
   outline: 1px solid var(--foreground-color-warning);
 }
 
@@ -3212,10 +3259,8 @@ body {
   }
 }
 
-@media (hover: none) {
-  .about-us__ssatForm-consent-checkbox-input:focus-visible + .about-us__ssatForm-consent-checkbox-checkmark {
-    outline: 1px solid var(--foreground-color-primary);
-  }
+.about-us__ssatForm-consent-checkbox-input_invalid:active:not(:focus-visible) + .about-us__ssatForm-consent-checkbox-checkmark {
+  outline: 1px solid var(--foreground-color-warning);
 }
 
 .about-us__ssatForm-consent-checkbox-checkmark::after {
@@ -3403,11 +3448,6 @@ body {
   fill: #6D31EE;
 }
 
-.secondary-navigation__socials-link:active:not(:focus-visible) .secondary-navigation__socials-link-svg-path {
-  fill: #4F28A5;
-  transition: fill var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .secondary-navigation__socials-link:focus-visible .secondary-navigation__socials-link-svg-path {
     fill: #D2D5DD;
@@ -3416,6 +3456,11 @@ body {
   .secondary-navigation__socials-link:hover:not(:focus-visible) .secondary-navigation__socials-link-svg-path {
     fill: #D2D5DD;
   }
+}
+
+.secondary-navigation__socials-link:active:not(:focus-visible) .secondary-navigation__socials-link-svg-path {
+  fill: #4F28A5;
+  transition: fill var(--transition-time-fast) ease-out;
 }
 
 .secondary-navigation__nav {
@@ -3514,12 +3559,6 @@ body {
   color: var(--text-color-active-secondary);
 }
 
-.secondary-navigation__nav-link:active:not(:focus-visible) {
-  outline: none;
-  color: var(--text-color-active);
-  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
-}
-
 @media (hover: none) {
   .secondary-navigation__nav-link:focus-visible {
     outline: none;
@@ -3532,6 +3571,12 @@ body {
     color: var(--text-color-primary);
     background: none;
   }
+}
+
+.secondary-navigation__nav-link:active:not(:focus-visible) {
+  outline: none;
+  color: var(--text-color-active);
+  transition: color var(--transition-time-fast) ease-out, background-color var(--transition-time-fast) ease-out;
 }
 
 .secondary-navigation {
@@ -3636,4 +3681,4 @@ body {
 
 
 
-/*# sourceMappingURL=main.26f581e03ce2ef4f955b.css.map*/
+/*# sourceMappingURL=main.f1d5f03aec83aa9d5cf3.css.map*/
