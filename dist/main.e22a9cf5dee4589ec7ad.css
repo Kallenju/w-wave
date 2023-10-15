@@ -1214,7 +1214,7 @@ body {
     padding-top: 0;
     padding-left: 9.00rem;
     max-width: 34.50rem;
-    background-size: 7.00rem 9.60rem;
+    background-size: contain;
   }
 }
 
@@ -1222,7 +1222,6 @@ body {
   .broadcast__archive-wrapper {
     padding-top: 0;
     padding-left: 9.00rem;
-    background-size: 7.70rem 10.50rem;
   }
 }
 
@@ -3636,4 +3635,4 @@ body {
 
 
 
-/*# sourceMappingURL=main.f41641097422f5bf7f25.css.map*/
+/*# sourceMappingURL=main.e22a9cf5dee4589ec7ad.css.map*/
