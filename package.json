@@ -3,7 +3,11 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config ./webpack_configs/webpack.production.config.js --mode production",
     "start": "cross-env NODE_ENV=development webpack serve --config ./webpack_configs/webpack.development.config.js --mode development --stats-children",
-    "check": "echo \"run check\""
+    "lint": "eslint ./src/**/*.ts",
+    "lint:fix": "eslint --fix ./src/**/*.ts",
+    "prettier": "prettier --check  --config ./.prettierrc.js ./src/**/*.ts",
+    "prettier:fix": "prettier --write --config ./.prettierrc.js ./src/**/*.ts",
+    "check-types": "tsc"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.9",
