@@ -384,8 +384,8 @@ template,[hidden] {
 @font-face {
   font-family: Muller;
   src: local('Muller-Regular'),
-  url(/w-wavefonts/MullerRegular.woff2) format('woff2'),
-  url(/w-wavefonts/MullerRegular.woff) format('woff');
+  url(/w-wave/fonts/MullerRegular.woff2) format('woff2'),
+  url(/w-wave/fonts/MullerRegular.woff) format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -394,8 +394,8 @@ template,[hidden] {
 @font-face {
   font-family: Muller;
   src: local('Muller-Medium'),
-  url(/w-wavefonts/MullerMedium.woff2) format('woff2'),
-  url(/w-wavefonts/MullerMedium.woff) format('woff');
+  url(/w-wave/fonts/MullerMedium.woff2) format('woff2'),
+  url(/w-wave/fonts/MullerMedium.woff) format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -404,8 +404,8 @@ template,[hidden] {
 @font-face {
   font-family: Muller;
   src: local('Muller-Bold'),
-  url(/w-wavefonts/MullerBold.woff2) format('woff2'),
-  url(/w-wavefonts/MullerBold.woff) format('woff');
+  url(/w-wave/fonts/MullerBold.woff2) format('woff2'),
+  url(/w-wave/fonts/MullerBold.woff) format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -892,7 +892,7 @@ body {
 
 .hero__container {
   padding: 9.40rem 0;
-  background: right center / 35.0rem 37.20rem no-repeat url(/w-waveimg/microphone.webp);
+  background: right center / 35.0rem 37.20rem no-repeat url(/w-wave/img/microphone.webp);
 }
 
 @media screen and (max-width: 82.5em) {
@@ -1230,7 +1230,7 @@ body {
   padding-top: 11.30rem;
   max-width: 25.50rem;
   width: 100%;
-  background: top left / 6.50rem 8.90rem no-repeat url(/w-waveimg/broadcasts_microphone.webp);
+  background: top left / 6.50rem 8.90rem no-repeat url(/w-wave/img/broadcasts_microphone.webp);
 }
 
 @media screen and (max-width: 56.5em) {
@@ -2277,7 +2277,7 @@ body {
   font-weight: 400;
   line-height: 1.00;
   color: #F0D288;
-  background: bottom left / contain no-repeat url(/w-waveimg/wave.svg);
+  background: bottom left / contain no-repeat url(/w-wave/img/wave.svg);
 }
 
 @media screen and (max-width: 40em) {
@@ -2526,7 +2526,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   padding-right: 47.50rem;
-  background-image: url(/w-waveimg/about-us-vertical-spiral.svg), url(/w-waveimg/dawn.svg);
+  background-image: url(/w-wave/img/about-us-vertical-spiral.svg), url(/w-wave/img/dawn.svg);
   background-position: center right 28.45rem, center right;
   background-size: contain, 25.50rem 25.50rem;
   background-repeat: no-repeat, no-repeat;
@@ -2535,7 +2535,7 @@ body {
 @media screen and (max-width: 82.5em) {
   .about-us__text-block {
     padding-right: 28.50rem;
-    background-image: url(/w-waveimg/dawn.svg);
+    background-image: url(/w-wave/img/dawn.svg);
     background-position: center right;
     background-size: 25.50rem 25.50rem;
     background-repeat: no-repeat;
@@ -2557,7 +2557,7 @@ body {
     left: -14.8437vw;
     width: calc(100% + 14.8437vw);
     height: 11.20rem;
-    background-image: url(/w-waveimg/about-us-horizontal-spiral.svg), url(/w-waveimg/dawn.svg);
+    background-image: url(/w-wave/img/about-us-horizontal-spiral.svg), url(/w-wave/img/dawn.svg);
     background-position: center left, center right;
     background-size: calc(100% - 14.20rem) 100%, 11.20rem 11.20rem;
     background-repeat: no-repeat, no-repeat;
@@ -3313,7 +3313,7 @@ body {
   left: 0;
   width: 1.40rem;
   height: 1.40rem;
-  background: center center / 1.20rem 1.20rem no-repeat url(/w-waveimg/checkmark.svg);
+  background: center center / 1.20rem 1.20rem no-repeat url(/w-wave/img/checkmark.svg);
   opacity: 0;
   transition: opacity var(--transition-time-fast) ease-out;
 }
@@ -3705,7 +3705,7 @@ body {
   margin: 0;
   padding-top: 3.00rem;
   padding-bottom: 1.00rem;
-  background: top 1.00rem left -5.00rem / max(100vw, 192.0rem) 1.00rem no-repeat url(/w-waveimg/footer-horizontal-spiral.svg), #292E39;
+  background: top 1.00rem left -5.00rem / max(100vw, 192.0rem) 1.00rem no-repeat url(/w-wave/img/footer-horizontal-spiral.svg), #292E39;
 }
 
 .footer-legal__container {
@@ -3723,4 +3723,4 @@ body {
 
 
 
-/*# sourceMappingURL=main.4dbd93362cbb45615ebf.css.map*/
+/*# sourceMappingURL=main.291afae1d446ef5c8ea5.css.map*/
